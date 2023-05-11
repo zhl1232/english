@@ -23,6 +23,8 @@ However, the North Pole is warmer than the South Pole.
   </span>
 </template>
 
+<br />
+
 <textarea v-model="msg" style="width: 350px; height: 200px" />
 
 <script setup>
