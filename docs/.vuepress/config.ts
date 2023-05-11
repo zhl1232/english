@@ -3,7 +3,7 @@ import { defineUserConfig, defaultTheme } from 'vuepress';
 import fs from 'fs';
 const dir = fs.readdirSync('./docs');
 const sidebar = dir.flatMap((item) => {
-  if (item === 'README.md') return [];
+  if (item === 'Index.md') return [];
   
   return item.match(/(.*)\.md/)?.[1] ?? [];
 }).sort((a, b) => {
