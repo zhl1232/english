@@ -1,18 +1,14 @@
 import { defineUserConfig, defaultTheme } from 'vuepress';
 
 import fs from 'fs';
-const dir = fs.readdirSync('/docs');
+const dir = fs.readdirSync('./docs');
 console.log(dir)
 const sidebar = dir.flatMap((item) => {
   if (item === 'Index.md') return [];
   
   return item.match(/(.*)\.md/)?.[1] ?? [];
-}).sort((a, b) => {
-  return (
-    fs.statSync(`./docs/${a}.md/`).ctimeMs >
-    fs.statSync(`./docs/${b}.md/`).ctimeMs ? 1 : -1
-  );
 })
+
 
 export default defineUserConfig({
   base: '/english/',
