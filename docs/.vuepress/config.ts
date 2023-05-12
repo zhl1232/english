@@ -1,7 +1,8 @@
 import { defineUserConfig, defaultTheme } from 'vuepress';
 
 import fs from 'fs';
-const dir = fs.readdirSync('./docs');
+const dir = fs.readdirSync('/docs');
+console.log(dir)
 const sidebar = dir.flatMap((item) => {
   if (item === 'Index.md') return [];
   
