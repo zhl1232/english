@@ -9,6 +9,7 @@ const sidebar = dir.flatMap((item) => {
   return item.match(/(.*)\.md/)?.[1] ?? [];
 })
 
+
 export default defineUserConfig({
   base: '/english/',
   lang: 'zh-CN',
