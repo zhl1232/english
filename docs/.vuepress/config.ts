@@ -14,6 +14,7 @@ const sidebar = dir.flatMap((item) => {
 })
 
 export default defineUserConfig({
+  base: '/english/',
   lang: 'zh-CN',
   title: '你好！',
   theme: defaultTheme({
