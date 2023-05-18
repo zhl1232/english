@@ -15,7 +15,7 @@
 <script setup>
 import { h, ref, watch } from 'vue'
 
-const page = ['humanBody', 'northPole', 'pineTree', 'birdNest', 'bee', 'bodyTemperature', 'freshWater', 'magnet']
+const page = ['humanBody', 'northPole', 'pineTree', 'birdNest', 'bee', 'bodyTemperature', 'freshWater', 'magnet', 'elephant']
 
 function gen(unit = 32) {
   const dateList = []

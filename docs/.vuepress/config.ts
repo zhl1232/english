@@ -13,7 +13,8 @@ export default defineUserConfig({
       'bee',
       'bodyTemperature',
       'freshWater',
-      'magnet'
+      'magnet',
+      'elephant'
     ]
   })
 });
