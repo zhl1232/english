@@ -14,7 +14,8 @@ export default defineUserConfig({
       'bodyTemperature',
       'freshWater',
       'magnet',
-      'elephant'
+      'elephant',
+      'skin'
     ]
   })
 });
