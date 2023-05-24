@@ -15,7 +15,8 @@ export default defineUserConfig({
       'freshWater',
       'magnet',
       'elephant',
-      'skin'
+      'skin',
+      'soil'
     ]
   })
 });

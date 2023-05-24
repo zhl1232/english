@@ -15,7 +15,7 @@
 <script setup>
 import { h, ref, watch } from 'vue'
 
-const page = ['humanBody', 'northPole', 'pineTree', 'birdNest', 'bee', 'bodyTemperature', 'freshWater', 'magnet', 'elephant', 'skin']
+const page = ['humanBody', 'northPole', 'pineTree', 'birdNest', 'bee', 'bodyTemperature', 'freshWater', 'magnet', 'elephant', 'skin', 'soil']
 
 function gen(unit = 32) {
   const dateList = []
@@ -44,12 +44,12 @@ temp.shift()
 const list = ref(temp)
 
 function genCurrentDate(day) {
-  const startDate = new Date('2023-5-10')
+  const startDate = new Date('2023-5-15')
   startDate.setDate(startDate.getDate() + day)
   return `${startDate.getFullYear()}-${startDate.getMonth() + 1}-${startDate.getDate()} `
 }
 function genStyle(day) {
-  const startDate = new Date('2023-5-10')
+  const startDate = new Date('2023-5-15')
   startDate.setDate(startDate.getDate() + day)
   const isToday = startDate.getMonth() === new Date().getMonth() && startDate.getDate() === new Date().getDate()
   return { color: isToday ? '--c-text' : startDate < new Date() ? 'green' : 'red' }
