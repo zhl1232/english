@@ -16,7 +16,8 @@ export default defineUserConfig({
       'magnet',
       'elephant',
       'skin',
-      'soil'
+      'soil',
+      'gorilla'
     ]
   })
 });
